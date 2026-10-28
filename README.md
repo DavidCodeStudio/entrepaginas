@@ -33,3 +33,6 @@ Guía de bienvenida con tres pasos, iconos SVG, enlaces a Lecturas y Eventos, y 
 
 ## Comunidad
 Diseño editorial aprobado: collage original completo, tres formas de participar, pregunta destacada en rosa y botón de participación. El botón utiliza el diálogo demostrativo del club, sin envío ni almacenamiento de datos. Composición apilada en móvil, iconos SVG y tipografía local.
+
+## Inclusión
+Diseño aprobado con ilustración de libro y auriculares, tres compromisos y contacto independiente. El formulario se identifica como demostrativo antes de escribir: no envía ni almacena mensajes, no solicita datos personales ni de salud y borra el texto al completar la prueba. Conectar un canal real antes de habilitar el envío. La ilustración es un recurso gráfico generado a partir de la propuesta aprobada.

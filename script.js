@@ -153,3 +153,14 @@ document.querySelector('[data-restablecer-lecturas]')?.addEventListener('click',
   const todas = document.querySelector('[data-filtro="todos"]');
   todas.click();todas.focus();
 });
+
+// Canal de inclusión demostrativo, separado del registro al club.
+const dialogoInclusion = document.getElementById('dialogo-inclusion');
+document.querySelector('[data-abrir-inclusion]')?.addEventListener('click', () => dialogoInclusion?.showModal());
+dialogoInclusion?.querySelector('.cerrar-dialogo').addEventListener('click', () => dialogoInclusion.close());
+dialogoInclusion?.addEventListener('click', evento => {if (evento.target === dialogoInclusion) dialogoInclusion.close();});
+document.getElementById('formulario-inclusion')?.addEventListener('submit', evento => {
+  evento.preventDefault();
+  document.querySelector('.mensaje-inclusion').textContent = 'Prueba completada: tu mensaje no se ha enviado ni guardado.';
+  evento.target.reset();
+});

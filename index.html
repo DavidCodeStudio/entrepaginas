@@ -7,8 +7,8 @@
   <meta name="description"
     content="ENTRE PÁGINAS: un club de lectura abierto para descubrir historias, compartir ideas y conectar personas.">
   <title>ENTRE PÁGINAS · Libros que conectan</title>
-  <link rel="stylesheet" href="styles.css?v=comunidad-5">
-  <script src="script.js?v=comunidad-5" defer></script>
+  <link rel="stylesheet" href="styles.css?v=inclusion-6">
+  <script src="script.js?v=inclusion-6" defer></script>
 </head>
 
 <body>
@@ -253,29 +253,19 @@
     </section>
 
     <!-- 06 · INCLUSIÓN -->
-    <section class="seccion inclusion" id="inclusion" aria-labelledby="titulo-inclusion">
-      <div class="contenedor inclusion-distribucion">
-        <div>
-          <p class="etiqueta"><strong>06 /</strong> INCLUSIÓN</p>
-          <h2 id="titulo-inclusion">LAS HISTORIAS<br>NO TIENEN<br><span>BARRERAS.</span></h2>
-          <p>Creemos en una comunidad donde todas las personas tienen espacio. No importa cuánto leas, de dónde vengas o
-            cómo disfrutes de los libros. Aquí caben todas las voces.</p><a class="boton boton-negro"
-            href="#inclusion">HABLEMOS DE ACCESIBILIDAD
-            <span>→</span></a>
+    <section class="seccion inclusion inclusion-abierta" id="inclusion" aria-labelledby="titulo-inclusion">
+      <div class="contenedor">
+        <div class="inclusion-cabecera">
+          <div><p class="etiqueta"><strong>06 /</strong> INCLUSIÓN</p>
+            <h2 id="titulo-inclusion">HAY MUCHAS<br>FORMAS DE LEER.<br><span>AQUÍ CABEN TODAS.</span></h2>
+            <p class="inclusion-intro">Cada persona llega a una historia de una forma distinta. Queremos que compartirla sea una experiencia abierta y respetuosa.</p>
+          </div>
+          <img class="inclusion-ilustracion" src="assets/inclusion-lecturas.png" alt="Libro abierto junto a unos auriculares azules y recortes de papel rosa y lima: diferentes formas de disfrutar las historias" width="1536" height="1024" loading="lazy">
         </div>
-        <div class="tarjetas-inclusion">
-          <article class="tarjeta-inclusion tarjeta-lima"><span class="simbolo-tarjeta" aria-hidden="true">✳</span>
-            <h3>TODAS LAS<br>VOCES CUENTAN</h3>
-            <p>Un espacio para compartir opiniones diferentes con respeto, curiosidad y ganas de aprender.</p>
-          </article>
-          <article class="tarjeta-inclusion tarjeta-rosa"><span class="simbolo-tarjeta" aria-hidden="true">◉</span>
-            <h3>DIFERENTES<br>FORMAS DE LEER</h3>
-            <p>Novelas, poesía, cómics, ensayos, audiolibros o libros electrónicos. Todas son bienvenidas.</p>
-          </article>
-          <article class="tarjeta-inclusion tarjeta-azul"><span class="simbolo-tarjeta" aria-hidden="true">↗</span>
-            <h3>SIN<br>ETIQUETAS</h3>
-            <p>No importa tu edad, experiencia lectora, origen, identidad o capacidades. Nos unen las historias.</p>
-          </article>
+        <ul class="inclusion-compromisos" aria-label="Nuestros compromisos de convivencia"><li class="inclusion-compromiso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3C6 3 2 6 2 10c0 3 2 5 5 6l-1 5 6-4c6 0 10-3 10-7S18 3 12 3Z"/><path d="M18 17l3 4-1-5"/><circle cx="7" cy="10" r=".5"/><circle cx="12" cy="10" r=".5"/><circle cx="17" cy="10" r=".5"/></svg><h3>TU VOZ CUENTA.</h3><p>Puedes compartir, preguntar o empezar escuchando. Nos une la curiosidad y el respeto.</p></li><li class="inclusion-compromiso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 10c-2-2-5-2-8-1v11c3-1 6-1 8 1 2-2 5-2 8-1V9c-3-1-6-1-8 1ZM12 10v11M3 12V9a9 9 0 0 1 18 0v3"/><path d="M1 12h3v6H1zM20 12h3v6h-3z"/></svg><h3>TU FORMA DE LEER, TAMBIÉN.</h3><p>Papel, digital o audio. Todas las formas de disfrutar una historia tienen su lugar.</p></li><li class="inclusion-compromiso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 5v7l5 2"/></svg><h3>A TU RITMO.</h3><p>Sin comparaciones. Cada persona tiene sus tiempos, sus intereses y su manera de participar.</p></li></ul>
+        <div class="inclusion-escucha">
+          <p>Las diferencias enriquecen<br>la conversación.</p>
+          <div><button class="boton boton-negro inclusion-contacto" type="button" data-abrir-inclusion aria-haspopup="dialog" aria-controls="dialogo-inclusion">CUÉNTANOS QUÉ NECESITAS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h17m-7-7 7 7-7 7"/></svg></button><p>Queremos escucharte.</p></div>
         </div>
       </div>
     </section>
@@ -499,6 +489,12 @@
     <button type="button" class="cerrar-dialogo" aria-label="Cerrar ficha de lectura">×</button>
     <div class="lectura-ficha"><div class="lectura-portada"><img id="lectura-imagen" src="assets/cubierta-lectura-3.jpg" alt="" width="267" height="360"><span>ENTRE PÁGINAS / LECTURAS</span></div>
     <div class="lectura-detalle"><p class="etiqueta" id="lectura-genero"></p><h2 id="lectura-titulo"></h2><p id="lectura-autor"></p><p id="lectura-sinopsis"></p><h3>POR QUÉ LEERLO EN EL CLUB</h3><p id="lectura-motivo"></p><h3>HABLEMOS DE…</h3><ul id="lectura-temas"></ul><blockquote id="lectura-pregunta"></blockquote><button type="button" class="boton boton-lima" data-lectura-comunidad>CONOCE LA COMUNIDAD <span aria-hidden="true">→</span></button></div></div>
+  </dialog>
+<dialog id="dialogo-inclusion" class="dialogo-inscripcion dialogo-inclusion" aria-labelledby="inclusion-dialogo-titulo" aria-describedby="inclusion-dialogo-aviso">
+    <button class="cerrar-dialogo" type="button" aria-label="Cerrar formulario de inclusión">×</button>
+    <p class="etiqueta">ENTRE PÁGINAS / TE ESCUCHAMOS</p><h2 id="inclusion-dialogo-titulo">¿QUÉ NECESITAS PARA PARTICIPAR?</h2>
+    <p id="inclusion-dialogo-aviso">Este formulario es una demostración: todavía no envía ni guarda mensajes. El canal de contacto estará disponible próximamente.</p>
+    <form id="formulario-inclusion"><label for="inclusion-mensaje">¿Qué te ayudaría a disfrutar del club?</label><textarea id="inclusion-mensaje" name="mensaje" rows="4" maxlength="2000" required placeholder="Por ejemplo, información sobre los formatos de lectura…"></textarea><p class="inclusion-privacidad">Evita incluir datos personales o información de salud.</p><button class="boton boton-lima" type="submit">PROBAR FORMULARIO <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h17m-7-7 7 7-7 7"/></svg></button><p class="mensaje-inclusion" role="status" aria-live="polite"></p></form>
   </dialog>
 </body>
 
