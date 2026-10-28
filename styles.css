@@ -244,3 +244,24 @@
 #el-club.club-editorial .club-imagen img{width:100%;height:auto;aspect-ratio:615/516;object-fit:contain}
 @media(max-width:1100px){#el-club.club-editorial .club-distribucion{grid-template-columns:1fr 1.1fr;gap:35px}#el-club.club-editorial .club-imagen{grid-column:1/-1;max-width:440px;margin:0 auto;padding:0;border:0}#el-club.club-editorial h2{font-size:60px}}
 @media(max-width:650px){#el-club.club-editorial{padding:65px 0}#el-club.club-editorial .club-distribucion{grid-template-columns:1fr;gap:32px}#el-club.club-editorial h2{font-size:clamp(44px,12vw,64px)}#el-club.club-editorial .club-descripcion{font-size:16px}#el-club.club-editorial .ventajas-club{border-left:0;border-top:1px solid #fff3;padding:30px 0 0;gap:30px 20px}#el-club.club-editorial .club-icono{width:52px;height:52px}#el-club.club-editorial .ventaja-club>p{font-size:16px}#el-club.club-editorial .club-comercio>p{font-size:29px}#el-club.club-editorial .club-imagen{grid-column:auto;width:100%;max-width:360px}}
+/* 02 / El club: iconografía y fotografía del diseño aprobado. */
+#el-club.club-refinado{padding:80px 0;background:#101010}
+#el-club.club-refinado .club-distribucion{grid-template-columns:1fr 1.04fr 1.05fr;gap:30px;align-items:stretch}
+#el-club.club-refinado .club-presentacion{align-self:center}
+#el-club.club-refinado h2{font-size:clamp(45px,5vw,74px);line-height:1;letter-spacing:-.025em;margin-bottom:32px}
+#el-club.club-refinado .club-descripcion{font-size:17px;line-height:1.65}
+#el-club.club-refinado .ventajas-club{gap:0;padding:20px 24px;position:relative}
+#el-club.club-refinado .ventaja-club{padding:25px 10px 28px;position:relative}
+#el-club.club-refinado .ventaja-club:nth-child(-n+2){border-bottom:1px solid #ffffff24}
+#el-club.club-refinado .ventaja-club:nth-child(odd):not(.club-comercio){border-right:1px solid #ffffff1a}
+#el-club.club-refinado .club-icono{width:62px;height:62px;stroke-width:1.35;margin:0 auto 22px}
+#el-club.club-refinado .ventaja-club>p{font-size:16px;line-height:1.4}
+#el-club.club-refinado .club-comercio{padding:28px 0 10px;border-top:1px solid #ffffff24}
+#el-club.club-refinado .club-comercio .club-icono{width:102px;height:62px;stroke-width:1.35;margin-bottom:16px}
+#el-club.club-refinado .club-comercio>p{font:400 17px/1.4 Arial,sans-serif;margin:0 0 10px}
+#el-club.club-refinado .club-comercio>span{font-size:12px;line-height:1.5}
+#el-club.club-refinado .club-imagen{padding-left:16px;position:relative;overflow:hidden}
+#el-club.club-refinado .club-imagen img{width:100%;height:auto;aspect-ratio:2/3;max-height:650px;object-fit:contain;display:block}
+@media(max-width:1100px){#el-club.club-refinado .club-distribucion{grid-template-columns:1fr 1.08fr;gap:30px}#el-club.club-refinado .club-imagen{grid-column:1/-1;width:100%;max-width:440px;padding:0;border:0;margin:0 auto}#el-club.club-refinado .club-imagen img{max-height:510px}#el-club.club-refinado h2{font-size:62px}}
+@media(max-width:650px){#el-club.club-refinado{padding:65px 0}#el-club.club-refinado .club-distribucion{grid-template-columns:1fr;gap:30px}#el-club.club-refinado h2{font-size:clamp(44px,12.5vw,66px)}#el-club.club-refinado .club-descripcion{font-size:16px}#el-club.club-refinado .ventajas-club{border-left:0;border-top:1px solid #ffffff24;padding:12px 0 0}#el-club.club-refinado .ventaja-club{padding:25px 10px}#el-club.club-refinado .club-icono{width:56px;height:56px;margin-bottom:17px}#el-club.club-refinado .ventaja-club>p{font-size:15px}#el-club.club-refinado .club-comercio{padding-bottom:0}#el-club.club-refinado .club-comercio .club-icono{width:94px;height:56px}#el-club.club-refinado .club-comercio>p{font-size:18px}#el-club.club-refinado .club-imagen{grid-column:auto;max-width:350px}#el-club.club-refinado .club-imagen img{max-height:480px}}
+#el-club.club-refinado .club-imagen img{-webkit-mask-image:linear-gradient(to right,transparent,#000 7%,#000 96%,transparent),linear-gradient(to bottom,transparent,#000 6%,#000 93%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 7%,#000 96%,transparent),linear-gradient(to bottom,transparent,#000 6%,#000 93%,transparent);mask-composite:intersect}
