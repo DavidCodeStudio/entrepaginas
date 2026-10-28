@@ -26,7 +26,7 @@
           MES</a><a href="#lecturas">LECTURAS</a><a href="#comunidad">COMUNIDAD</a><a href="#inclusion">INCLUSIÓN</a><a
           href="#eventos">EVENTOS</a>
       </nav>
-      <button class="boton boton-lima boton-unirse" type="button" data-abrir-inscripcion>ÚNETE <span
+      <button class="boton boton-lima boton-marketplace" type="button" aria-haspopup="dialog" aria-controls="dialogo-marketplace" data-abrir-marketplace>MARKETPLACE <span
           aria-hidden="true">→</span></button>
     </div>
   </header>
@@ -483,6 +483,14 @@
         class="boton boton-lima" type="submit">QUIERO UNIRME →</button>
       <p class="mensaje-inscripcion" role="status" aria-live="polite"></p>
     </form><small>Demostración: tus datos no se envían ni se guardan.</small>
+  </dialog>
+  <dialog id="dialogo-marketplace" class="dialogo-inscripcion" aria-labelledby="titulo-marketplace" aria-describedby="descripcion-marketplace">
+    <button type="button" class="cerrar-dialogo" aria-label="Cerrar marketplace">×</button>
+    <p class="etiqueta"><strong>✳ /</strong> ENTRE PÁGINAS</p>
+    <h2 id="titulo-marketplace">TU PRÓXIMO DESCUBRIMIENTO.</h2>
+    <p id="descripcion-marketplace">Estamos preparando el marketplace de Entre Páginas. Muy pronto podrás crear tu cuenta, acceder a la tienda y gestionar tus compras desde un mismo lugar.</p>
+    <p class="marketplace-estado">PRÓXIMAMENTE</p>
+    <button class="boton boton-lima" type="button" data-cerrar-marketplace>SEGUIR EXPLORANDO <span aria-hidden="true">→</span></button>
   </dialog>
 </body>
 

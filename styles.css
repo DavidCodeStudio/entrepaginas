@@ -183,3 +183,11 @@
 @media(max-width:900px){.pie-pagina .pie-columnas{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.pie-pagina .pie-columnas{gap:30px 14px}.pie-pagina .pie-grupo{padding-left:12px}.pie-pagina .pie-grupo h2,.pie-pagina .pie-grupo>a{font-size:12px}.pie-pagina .pie-columnas>.pie-social{grid-column:1/-1}.pie-pagina .pie-lema{margin-top:24px}.pie-pagina .pie-inferior{align-items:flex-start;flex-direction:column}}
 @media(max-width:380px){.pie-pagina .pie-columnas{grid-template-columns:1fr}.pie-pagina .pie-identidad,.pie-pagina .pie-columnas>.pie-social{grid-column:auto}}
+
+/* El acceso comercial conserva su propia identidad y flujo. */
+.boton-marketplace{white-space:nowrap;flex-shrink:0}
+.marketplace-estado{display:inline-block;background:var(--rosa);padding:6px 12px;font-size:11px;font-weight:800;letter-spacing:1.5px}
+#dialogo-marketplace h2{font-size:clamp(28px,5vw,35px);overflow-wrap:break-word}
+#dialogo-marketplace [data-cerrar-marketplace]{width:100%;margin-top:12px}
+@media(max-width:700px){.cabecera .boton-marketplace{min-height:44px;padding:10px 12px;gap:10px;font-size:10px}}
+@media(max-width:380px){.cabecera-interior{gap:8px}.cabecera .marca{font-size:16px;padding-right:25px}.cabecera .marca span{font-size:27px}.cabecera .boton-menu{padding:5px 8px}.cabecera .boton-marketplace{padding:10px 8px;gap:6px;font-size:9px}.cabecera .boton-marketplace span{font-size:18px}}

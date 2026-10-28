@@ -16,3 +16,6 @@ Los formularios son demostraciones: no envían ni almacenan datos. Conectar un s
 
 ## Validación
 Chromium: anchos 320, 390, 768 y 1440 px sin desbordamiento horizontal, todos los recursos cargados y sin errores JavaScript. Comprobados menú móvil y Escape, filtrado de ensayos (2 resultados), diálogo, inscripción demostrativa y newsletter demostrativa.
+
+## Marketplace
+El botón MARKETPLACE del header está separado de la inscripción al club. Por ahora abre un aviso de próxima apertura, sin recoger datos ni crear cuentas. Cuando se confirme la URL HTTPS de registro/Mi cuenta de WordPress, sustituir el botón por un enlace a esa URL y retirar el aviso provisional. El registro, el inicio de sesión y la gestión de compras deberán resolverse en el ecommerce de WordPress.

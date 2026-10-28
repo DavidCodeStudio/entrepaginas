@@ -127,3 +127,13 @@ document.querySelectorAll('[data-abrir-inscripcion]:not(.evento-datos button)').
     document.querySelector('#dialogo-inscripcion > p:not(.etiqueta)').textContent = 'Un primer paso para leer en compañía. Prueba el formulario de inscripción: no se envían ni se guardan datos.';
   });
 });
+
+// Acceso independiente al futuro marketplace; no utiliza el registro del club.
+const dialogoMarketplace = document.getElementById('dialogo-marketplace');
+document.querySelector('[data-abrir-marketplace]')?.addEventListener('click', () => dialogoMarketplace?.showModal());
+dialogoMarketplace?.querySelectorAll('.cerrar-dialogo, [data-cerrar-marketplace]').forEach(boton => {
+  boton.addEventListener('click', () => dialogoMarketplace.close());
+});
+dialogoMarketplace?.addEventListener('click', evento => {
+  if (evento.target === dialogoMarketplace) dialogoMarketplace.close();
+});
