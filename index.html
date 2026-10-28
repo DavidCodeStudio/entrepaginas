@@ -421,93 +421,53 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="pie-pagina">
+  <footer class="pie-pagina" id="pie-pagina">
     <div class="contenedor">
       <div class="pie-columnas">
-        <div><a class="marca marca-pie" href="#inicio">ENTRE<br>PÁGINAS<span aria-hidden="true">✳</span></a>
-          <p>BUENOS LIBROS.<br>MEJORES CONVERSACIONES.</p>
+        <div class="pie-identidad">
+          <a class="marca marca-pie" href="#inicio" aria-label="Entre Páginas, volver al inicio">ENTRE<span aria-hidden="true">✳</span><br>PÁGINAS</a>
+          <p>Buenos libros.<br>Mejores conversaciones.</p>
+          <span class="pie-subrayado" aria-hidden="true"></span>
         </div>
-        <nav aria-label="Enlaces del pie">
+        <nav class="pie-grupo" aria-label="Explorar el sitio">
           <h2>EXPLORA</h2>
-          <div class="pie-enlaces"><a href="#el-club">El club</a><a href="#comunidad">Comunidad</a><a
-              href="#libro-mes">Libro del mes</a><a href="#inclusion">Inclusión</a><a href="#lecturas">Lecturas</a><a
-              href="#eventos">Eventos</a><a href="#como-funciona">Cómo funciona</a></div>
+          <a href="#el-club">El club</a>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#lecturas">Lecturas</a>
+          <a href="#comunidad">Comunidad</a>
+          <a href="#inclusion">Inclusión</a>
+          <a href="#eventos">Eventos</a>
         </nav>
-        <!-- ==========================================
-     REDES SOCIALES
-     ========================================== -->
-
-        <nav class="redes-sociales" aria-label="Redes sociales">
-
+        <nav class="pie-grupo" aria-label="Recursos del club">
+          <h2>RECURSOS</h2>
+          <a href="#libro-mes">Libro del mes</a>
+          <a href="#lecturas">Recomendaciones</a>
+          <a href="#como-funciona">Guía para empezar</a>
+          <a href="#eventos">Actividades</a>
+        </nav>
+        <div class="pie-grupo">
+          <h2>SOBRE NOSOTROS</h2>
+          <a href="#el-club">Nuestra historia</a>
+          <a href="mailto:contacto@example.com">Contacto</a>
+          <a href="#inclusion">Accesibilidad</a>
+          <a href="#comunidad">La comunidad</a>
+        </div>
+        <div class="pie-grupo pie-social">
           <h2>SÍGUENOS</h2>
-
-          <ul class="redes-lista">
-
-            <!-- INSTAGRAM -->
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                aria-label="Instagram (abre en una pestaña nueva)">
-
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
-
-                  <rect x="2" y="2" width="20" height="20" rx="5" />
-                  <circle cx="12" cy="12" r="4" />
-                  <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none" />
-
-                </svg>
-
-                <span>Instagram</span>
-
-              </a>
-            </li>
-
-            <!-- X -->
-            <li>
-              <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
-                aria-label="X (abre en una pestaña nueva)">
-
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-
-                  <path
-                    d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l7.3-8.5L1.8 2h6.5l4.5 6.8L18.9 2zm-1.1 18h1.7L7.4 3.9H5.6z" />
-
-                </svg>
-
-                <span>X</span>
-
-              </a>
-            </li>
-
-            <!-- YOUTUBE -->
-            <li>
-              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
-                aria-label="YouTube (abre en una pestaña nueva)">
-
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-
-                  <path
-                    d="M23 7.1a3 3 0 0 0-2.1-2.1C19 4.5 12 4.5 12 4.5s-7 0-8.9.5A3 3 0 0 0 1 7.1 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.9A3 3 0 0 0 3.1 19C5 19.5 12 19.5 12 19.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.9 31 31 0 0 0-.5-4.9zM9.5 15.5v-7l6 3.5z" />
-
-                </svg>
-
-                <span>YouTube</span>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </nav>
-        <div>
-          <h2>ACCESIBILIDAD E INCLUSIÓN</h2><a href="#inclusion">Contacto ↗</a><a
-            href="#inclusion">Accesibilidad e inclusión</a>
-          <p class="nota-legal">Información legal pendiente de publicar.</p>
+          <div class="pie-redes">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (enlace provisional)">◎</a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (enlace provisional)">𝕏</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (enlace provisional)">▶</a>
+          </div>
+          <p class="pie-lema">LEER NOS UNE.<br>LAS DIFERENCIAS<br>NOS ENRIQUECEN.</p>
+          <span class="pie-lema-subrayado" aria-hidden="true"></span>
         </div>
       </div>
-      <div class="pie-inferior"><span>© 2026 ENTRE PÁGINAS · CLUB DE LECTURA INCLUSIVO </span><a href="#inicio">VOLVER
-          ARRIBA
-          ↑</a></div>
+      <div class="pie-inferior">
+        <p>© 2026 ENTRE PÁGINAS · Proyecto demostrativo</p>
+        <div class="pie-legal"><span>Textos legales pendientes</span><a href="#inclusion">Accesibilidad</a><a href="mailto:contacto@example.com">Contacto</a></div>
+        <a class="volver-arriba" href="#inicio"><span aria-hidden="true">↑</span> VOLVER ARRIBA</a>
+      </div>
     </div>
   </footer>
 
