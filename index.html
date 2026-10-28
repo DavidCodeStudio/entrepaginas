@@ -7,8 +7,8 @@
   <meta name="description"
     content="ENTRE PÁGINAS: un club de lectura abierto para descubrir historias, compartir ideas y conectar personas.">
   <title>ENTRE PÁGINAS · Libros que conectan</title>
-  <link rel="stylesheet" href="styles.css?v=redes-2">
-  <script src="script.js?v=redes-2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=lecturas-3">
+  <script src="script.js?v=lecturas-3" defer></script>
 </head>
 
 <body>
@@ -170,67 +170,49 @@
     <!-- ==================================================
          04. LECTURAS — DESCUBRE NUEVAS VOCES
          ================================================== -->
-    <section class="seccion seccion-negra lecturas" id="lecturas" aria-labelledby="titulo-lecturas">
-      <div class="contenedor lecturas-distribucion">
-        <!-- Texto y llamada a la acción -->
-        <div class="lecturas-presentacion">
-          <p class="etiqueta"><strong>04 /</strong> LECTURAS</p>
-          <h2 id="titulo-lecturas">DESCUBRE<br>NUEVAS <span>VOCES.</span></h2>
-          <p>Recomendaciones, reseñas y selecciones temáticas para seguir explorando más allá del libro del mes.</p>
-          <button class="boton boton-blanco lecturas-boton" type="button" id="boton-todas-lecturas"
-            aria-expanded="false" aria-controls="panel-filtros">
-            VER TODAS LAS LECTURAS <span aria-hidden="true">→</span>
-          </button>
+    <section class="seccion seccion-negra lecturas biblioteca" id="lecturas" aria-labelledby="titulo-lecturas">
+      <div class="contenedor">
+        <div class="biblioteca-cabecera">
+          <div><p class="etiqueta"><strong>04 /</strong> LECTURAS</p>
+          <h2 id="titulo-lecturas">TU PRÓXIMA GRAN<br>CONVERSACIÓN<br><span>EMPIEZA EN UN LIBRO.</span></h2></div>
+          <div class="biblioteca-intro"><span class="biblioteca-asterisco" aria-hidden="true">✳</span><p>Una historia puede abrir muchas puertas.<br>Encuentra la que te apetece cruzar hoy.</p><p class="biblioteca-indicacion">Explora una lectura y descubre de qué podemos hablar. ↙</p></div>
         </div>
-
-        <!-- Cinco libros, como en la referencia -->
-        <div class="rejilla-libros">
-          <article class="tarjeta-libro" data-genero="ensayo">
-            <img class="cubierta-lectura" src="assets/cubierta-lectura-1.jpg" alt="Cubierta de Sapiens" loading="lazy">
-            <h3>Sapiens</h3>
-            <p>Yuval Noah Harari</p>
-            <small>Ensayo</small>
-          </article>
-          <article class="tarjeta-libro" data-genero="ficcion">
-            <img class="cubierta-lectura" src="assets/cubierta-lectura-2.jpg"
-              alt="Cubierta de La vegetariana" loading="lazy">
-            <h3>La vegetariana</h3>
-            <p>Han Kang</p>
-            <small>Ficción</small>
-          </article>
-          <article class="tarjeta-libro" data-genero="ensayo">
-            <img class="cubierta-lectura" src="assets/cubierta-lectura-3.jpg" alt="Cubierta de El infinito en un junco"
-              loading="lazy">
-            <h3>El infinito en un junco</h3>
-            <p>Irene Vallejo</p>
-            <small>Ensayo</small>
-          </article>
-          <article class="tarjeta-libro" data-genero="ficcion">
-            <img class="cubierta-lectura" src="assets/cubierta-lectura-4.jpg" alt="Cubierta de Norwegian Wood"
-              loading="lazy">
-            <h3>Norwegian Wood</h3>
-            <p>Haruki Murakami</p>
-            <small>Ficción</small>
-          </article>
-          <article class="tarjeta-libro" data-genero="pendiente">
-            <img class="cubierta-lectura" src="assets/cubierta-lectura-5.jpg"
-              alt="Cubierta azul de la selección pendiente de identificar" loading="lazy">
-            <h3>Próxima lectura</h3>
-            <p>Título por confirmar</p>
-            <small>Por descubrir</small>
-          </article>
+        <div class="biblioteca-herramientas">
+          <div class="filtros" role="group" aria-label="Filtrar lecturas">
+            <button class="filtro activo" type="button" data-filtro="todos" aria-pressed="true">Todas</button>
+            <button class="filtro" type="button" data-filtro="ficcion" aria-pressed="false">Ficción</button>
+            <button class="filtro" type="button" data-filtro="ensayo" aria-pressed="false">Ensayo</button>
+            <button class="filtro" type="button" data-filtro="ciencia-ficcion" aria-pressed="false">Ciencia ficción</button>
+          </div>
+          <p class="aviso-filtros" role="status" aria-live="polite">5 lecturas para descubrir.</p>
         </div>
-      </div>
-
-      <!-- Los filtros se despliegan al pulsar el botón -->
-      <div class="contenedor panel-filtros" id="panel-filtros" hidden>
-        <div class="filtros" role="group" aria-label="Filtrar lecturas">
-          <button class="filtro activo" type="button" data-filtro="todos" aria-pressed="true">TODAS</button>
-          <button class="filtro" type="button" data-filtro="ficcion" aria-pressed="false">FICCIÓN</button>
-          <button class="filtro" type="button" data-filtro="ensayo" aria-pressed="false">ENSAYO</button>
-          <button class="filtro" type="button" data-filtro="fantasia" aria-pressed="false">CIENCIA FICCIÓN</button>
-        </div>
-        <p class="aviso-filtros" role="status" aria-live="polite"></p>
+        <div class="rejilla-libros"><article class="tarjeta-libro libro-destacado" data-genero="ensayo">
+          <button class="libro-abrir" type="button" data-libro="junco" aria-haspopup="dialog" aria-controls="dialogo-lectura" aria-label="Explorar El infinito en un junco, de Irene Vallejo">
+            <span class="libro-visual"><span class="libro-distintivo">PARA EMPEZAR</span><img class="cubierta-lectura" src="assets/cubierta-lectura-3.jpg" alt="Cubierta de El infinito en un junco" loading="lazy" width="267" height="360"></span>
+            <span class="libro-contenido"><span class="libro-genero">Ensayo</span><span class="libro-titulo">El infinito en un junco</span><span class="libro-autor">Irene Vallejo</span><span class="libro-gancho">Un viaje por la historia de los libros y las personas que los hicieron posibles.</span><span class="libro-explorar">EXPLORAR LECTURA <span aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></span></span>
+          </button></article>
+<article class="tarjeta-libro " data-genero="ensayo">
+          <button class="libro-abrir" type="button" data-libro="sapiens" aria-haspopup="dialog" aria-controls="dialogo-lectura" aria-label="Explorar Sapiens, de Yuval Noah Harari">
+            <span class="libro-visual"><img class="cubierta-lectura" src="assets/cubierta-lectura-1.jpg" alt="Cubierta de Sapiens" loading="lazy" width="267" height="360"></span>
+            <span class="libro-contenido"><span class="libro-genero">Ensayo</span><span class="libro-titulo">Sapiens</span><span class="libro-autor">Yuval Noah Harari</span><span class="libro-gancho">Una mirada a las historias que nos han convertido en quienes somos.</span><span class="libro-explorar">EXPLORAR LECTURA <span aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></span></span>
+          </button></article>
+<article class="tarjeta-libro " data-genero="ficcion">
+          <button class="libro-abrir" type="button" data-libro="vegetariana" aria-haspopup="dialog" aria-controls="dialogo-lectura" aria-label="Explorar La vegetariana, de Han Kang">
+            <span class="libro-visual"><img class="cubierta-lectura" src="assets/cubierta-lectura-2.jpg" alt="Cubierta de La vegetariana" loading="lazy" width="267" height="360"></span>
+            <span class="libro-contenido"><span class="libro-genero">Ficción</span><span class="libro-titulo">La vegetariana</span><span class="libro-autor">Han Kang</span><span class="libro-gancho">Una decisión íntima que pone en cuestión todo un mundo.</span><span class="libro-explorar">EXPLORAR LECTURA <span aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></span></span>
+          </button></article>
+<article class="tarjeta-libro " data-genero="ficcion">
+          <button class="libro-abrir" type="button" data-libro="norwegian" aria-haspopup="dialog" aria-controls="dialogo-lectura" aria-label="Explorar Norwegian Wood, de Haruki Murakami">
+            <span class="libro-visual"><img class="cubierta-lectura" src="assets/cubierta-lectura-4.jpg" alt="Cubierta de Norwegian Wood" loading="lazy" width="267" height="360"></span>
+            <span class="libro-contenido"><span class="libro-genero">Ficción</span><span class="libro-titulo">Norwegian Wood</span><span class="libro-autor">Haruki Murakami</span><span class="libro-gancho">Amistad, pérdida y los recuerdos que se quedan con nosotros.</span><span class="libro-explorar">EXPLORAR LECTURA <span aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></span></span>
+          </button></article>
+<article class="tarjeta-libro " data-genero="ficcion">
+          <button class="libro-abrir" type="button" data-libro="manana" aria-haspopup="dialog" aria-controls="dialogo-lectura" aria-label="Explorar Mañana, y mañana, y mañana, de Gabrielle Zevin">
+            <span class="libro-visual"><span class="libro-distintivo">LIBRO DEL MES</span><img class="cubierta-lectura" src="assets/libro-mes.jpg" alt="Cubierta de Mañana, y mañana, y mañana" loading="lazy" width="267" height="360"></span>
+            <span class="libro-contenido"><span class="libro-genero">Ficción</span><span class="libro-titulo">Mañana, y mañana, y mañana</span><span class="libro-autor">Gabrielle Zevin</span><span class="libro-gancho">Crear mundos juntos también es una forma de aprender a vivir.</span><span class="libro-explorar">EXPLORAR LECTURA <span aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></span></span>
+          </button></article></div>
+        <div class="biblioteca-vacia" hidden><span aria-hidden="true">↗</span><h3>La próxima historia está por llegar.</h3><p>Aún no hay lecturas de ciencia ficción en esta selección. Explora los otros géneros mientras preparamos nuevas propuestas.</p><button type="button" class="boton boton-lima" data-restablecer-lecturas>VER TODAS LAS LECTURAS <span aria-hidden="true">→</span></button></div>
+        <p class="biblioteca-cierre">Lee a tu ritmo. Cambia de idea. Encuentra tu próxima conversación. <span aria-hidden="true">✳</span></p>
       </div>
     </section>
 
@@ -491,6 +473,11 @@
     <p id="descripcion-marketplace">Estamos preparando el marketplace de Entre Páginas. Muy pronto podrás crear tu cuenta, acceder a la tienda y gestionar tus compras desde un mismo lugar.</p>
     <p class="marketplace-estado">PRÓXIMAMENTE</p>
     <button class="boton boton-lima" type="button" data-cerrar-marketplace>SEGUIR EXPLORANDO <span aria-hidden="true">→</span></button>
+  </dialog>
+<dialog id="dialogo-lectura" class="dialogo-lectura" aria-labelledby="lectura-titulo">
+    <button type="button" class="cerrar-dialogo" aria-label="Cerrar ficha de lectura">×</button>
+    <div class="lectura-ficha"><div class="lectura-portada"><img id="lectura-imagen" src="assets/cubierta-lectura-3.jpg" alt="" width="267" height="360"><span>ENTRE PÁGINAS / LECTURAS</span></div>
+    <div class="lectura-detalle"><p class="etiqueta" id="lectura-genero"></p><h2 id="lectura-titulo"></h2><p id="lectura-autor"></p><p id="lectura-sinopsis"></p><h3>POR QUÉ LEERLO EN EL CLUB</h3><p id="lectura-motivo"></p><h3>HABLEMOS DE…</h3><ul id="lectura-temas"></ul><blockquote id="lectura-pregunta"></blockquote><button type="button" class="boton boton-lima" data-lectura-comunidad>CONOCE LA COMUNIDAD <span aria-hidden="true">→</span></button></div></div>
   </dialog>
 </body>
 

@@ -9,7 +9,7 @@ python3 -m http.server 8000
 No requiere instalación ni compilación. HTML, CSS y JavaScript sin dependencias externas.
 
 ## Recursos
-Fotografías, collages y cubiertas facilitados por el usuario en Archivo.zip. Los collages se muestran completos, sin duplicar adornos. La ficha del mes corresponde a Mañana, y mañana, y mañana, de Gabrielle Zevin. La quinta lectura se muestra pendiente de identificar porque el título de su cubierta no es legible con suficiente precisión. Confirmar sus datos antes de publicarla como recomendación.
+Fotografías, collages y cubiertas facilitados por el usuario en Archivo.zip. Los collages se muestran completos, sin duplicar adornos. La ficha del mes corresponde a Mañana, y mañana, y mañana, de Gabrielle Zevin. La cubierta azul sin título confirmado queda fuera de la biblioteca. La selección incluye cuatro libros identificados y el libro del mes.
 
 ## Antes de publicar
 Los formularios son demostraciones: no envían ni almacenan datos. Conectar un servicio real antes de abrir inscripciones o la newsletter. Confirmar fechas, actividades, contacto, perfiles sociales e información legal; los eventos y enlaces sociales son ejemplos.
@@ -22,3 +22,8 @@ El botón MARKETPLACE del header está separado de la inscripción al club. Por 
 
 ## Iconos sociales
 Instagram, X y YouTube: SVG oficiales de Bootstrap Icons 1.13.1, guardados localmente en assets/icons/ y mostrados como imágenes de color blanco. Licencia MIT en licenses/bootstrap-icons-LICENSE.txt. Los enlaces llevan a las webs oficiales de Instagram, X y YouTube.
+
+## Biblioteca de lecturas
+Cinco lecturas identificadas, una recomendación destacada y filtros siempre visibles. Cada tarjeta abre una ficha con sinopsis, motivo de lectura, tres temas de conversación y una pregunta para el club. Ciencia ficción muestra un estado vacío hasta contar con títulos confirmados; permite volver a Todas. Sin enlaces de compra mientras el marketplace esté pendiente.
+
+Verificación de la biblioteca: 320, 390, 768 y 1440 px; filtro de ensayo (2), ficción (3), ciencia ficción (0) y restablecer (5); cinco fichas, cierre con Escape y devolución del foco; acceso a Comunidad. Comprobados también marketplace, menú móvil y formularios de demostración.
