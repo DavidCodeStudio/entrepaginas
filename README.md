@@ -19,3 +19,6 @@ Chromium: anchos 320, 390, 768 y 1440 px sin desbordamiento horizontal, todos lo
 
 ## Marketplace
 El botón MARKETPLACE del header está separado de la inscripción al club. Por ahora abre un aviso de próxima apertura, sin recoger datos ni crear cuentas. Cuando se confirme la URL HTTPS de registro/Mi cuenta de WordPress, sustituir el botón por un enlace a esa URL y retirar el aviso provisional. El registro, el inicio de sesión y la gestión de compras deberán resolverse en el ecommerce de WordPress.
+
+## Iconos sociales
+Instagram, X y YouTube: SVG oficiales de Bootstrap Icons 1.13.1, integrados localmente en el HTML. Licencia MIT en licenses/bootstrap-icons-LICENSE.txt. Los destinos siguen siendo provisionales hasta disponer de las cuentas del club.

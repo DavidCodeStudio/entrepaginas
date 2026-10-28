@@ -191,3 +191,8 @@
 #dialogo-marketplace [data-cerrar-marketplace]{width:100%;margin-top:12px}
 @media(max-width:700px){.cabecera .boton-marketplace{min-height:44px;padding:10px 12px;gap:10px;font-size:10px}}
 @media(max-width:380px){.cabecera-interior{gap:8px}.cabecera .marca{font-size:16px;padding-right:25px}.cabecera .marca span{font-size:27px}.cabecera .boton-menu{padding:5px 8px}.cabecera .boton-marketplace{padding:10px 8px;gap:6px;font-size:9px}.cabecera .boton-marketplace span{font-size:18px}}
+
+/* Logotipos oficiales de Bootstrap Icons: SVG locales con color heredado. */
+.pie-pagina .pie-redes a{width:44px;height:44px;transition:background-color .18s,color .18s,border-color .18s}
+.pie-pagina .pie-redes .bi{width:20px;height:20px;display:block;flex-shrink:0}
+@media(prefers-reduced-motion:reduce){.pie-pagina .pie-redes a{transition:none}}
