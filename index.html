@@ -7,8 +7,8 @@
   <meta name="description"
     content="ENTRE PÁGINAS: un club de lectura abierto para descubrir historias, compartir ideas y conectar personas.">
   <title>ENTRE PÁGINAS · Libros que conectan</title>
-  <link rel="stylesheet" href="styles.css?v=bienvenida-4">
-  <script src="script.js?v=bienvenida-4" defer></script>
+  <link rel="stylesheet" href="styles.css?v=comunidad-5">
+  <script src="script.js?v=comunidad-5" defer></script>
 </head>
 
 <body>
@@ -222,17 +222,33 @@
     </section>
 
     <!-- 05 · COMUNIDAD -->
-    <section class="seccion comunidad" id="comunidad" aria-labelledby="titulo-comunidad">
-      <div class="contenedor comunidad-distribucion">
-        <div>
-          <p class="etiqueta"><strong>05 /</strong> COMUNIDAD</p>
-          <h2 id="titulo-comunidad">CONVERSACIONES<br>QUE INSPIRAN.</h2>
-          <p>Un lugar para compartir ideas, hacer preguntas, recomendar lecturas y conocer a otras personas que también
-            viven los libros con pasión.</p><button class="boton boton-lima" type="button" data-abrir-inscripcion>ÚNETE
-            A LA COMUNIDAD <span>→</span></button>
+    <section class="seccion comunidad comunidad-editorial" id="comunidad" aria-labelledby="titulo-comunidad">
+      <div class="contenedor">
+        <p class="etiqueta"><strong>05 /</strong> COMUNIDAD</p>
+        <div class="comunidad-escena">
+          <div class="comunidad-relato">
+            <h2 id="titulo-comunidad">DISTINTAS<br>MIRADAS.<br><span>HISTORIAS QUE<br>NOS UNEN.</span></h2>
+            <p>Un lugar para compartir lo que lees, descubrir otras perspectivas y sentirte parte de la conversación.</p>
+          </div>
+          <div class="comunidad-vida">
+            <img class="comunidad-collage" src="assets/comunidad.jpg" alt="Cuatro personas compartiendo libros, con notas de nuevas amistades, ideas que conectan y distintas perspectivas" width="746" height="264" loading="lazy">
+            <ul class="comunidad-formas" aria-label="Formas de participar en la comunidad">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 6C9 4 6 3 2 4v15c4-1 7 0 10 2 3-2 6-3 10-2V4c-4-1-7 0-10 2ZM12 6v15"/></svg><div><h3>COMPARTE UN DESCUBRIMIENTO</h3><p>Ese libro que no puedes dejar de recomendar.</p></div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="7" r="3"/><path d="M2 21v-3a7 7 0 0 1 14 0v3M17 4a3 3 0 0 1 0 6M19 14a5 5 0 0 1 3 5v2"/></svg><div><h3>ESCUCHA OTRAS PERSPECTIVAS</h3><p>Una misma historia puede tener muchas lecturas.</p></div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3C6 3 2 6 2 10c0 3 2 5 5 6l-1 5 6-4c6 0 10-3 10-7S18 3 12 3Z"/></svg><div><h3>ENCUENTRA TU PRÓXIMA CONVERSACIÓN</h3><p>Siempre hay una nueva pregunta por hacer.</p></div></li>
+            </ul>
+          </div>
         </div>
-        <div class="comunidad-imagen"><img src="assets/comunidad.jpg"
-            alt="Grupo de personas compartiendo libros y una conversación" loading="lazy"></div>
+        <div class="comunidad-pregunta">
+          <p>¿Qué libro te hizo cambiar de opinión?</p>
+          <span>LAS BUENAS CONVERSACIONES EMPIEZAN CON UNA PREGUNTA.</span>
+        </div>
+        <div class="comunidad-invitacion">
+          <p>Tu mirada también cuenta.</p>
+          <div><button class="boton boton-lima comunidad-unirse" type="button" data-abrir-inscripcion aria-haspopup="dialog" aria-controls="dialogo-inscripcion">QUIERO FORMAR PARTE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h17m-7-7 7 7-7 7"/></svg></button>
+            <p class="comunidad-escuchar">También puedes empezar escuchando.</p>
+          </div>
+        </div>
       </div>
     </section>
 

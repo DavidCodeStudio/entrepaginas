@@ -30,3 +30,6 @@ Verificación de la biblioteca: 320, 390, 768 y 1440 px; filtro de ensayo (2), f
 
 ## Cómo funciona
 Guía de bienvenida con tres pasos, iconos SVG, enlaces a Lecturas y Eventos, y una acción principal para explorar libros. Las tarjetas se conectan horizontalmente en escritorio y verticalmente en móvil. Tipografía Barlow Condensed 700 alojada localmente; licencia SIL OFL incluida en licenses/barlow-condensed-LICENSE.txt.
+
+## Comunidad
+Diseño editorial aprobado: collage original completo, tres formas de participar, pregunta destacada en rosa y botón de participación. El botón utiliza el diálogo demostrativo del club, sin envío ni almacenamiento de datos. Composición apilada en móvil, iconos SVG y tipografía local.
