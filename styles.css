@@ -196,3 +196,9 @@
 .pie-pagina .pie-redes a{width:44px;height:44px;transition:background-color .18s,color .18s,border-color .18s}
 .pie-pagina .pie-redes .bi{width:20px;height:20px;display:block;flex-shrink:0}
 @media(prefers-reduced-motion:reduce){.pie-pagina .pie-redes a{transition:none}}
+
+/* Imágenes SVG con blanco explícito para asegurar visibilidad en el footer. */
+.pie-pagina .pie-redes a{display:flex;align-items:center;justify-content:center;background:#0b0b0b;color:#fff;border:1px solid #fff;min-width:44px;min-height:44px}
+.pie-pagina .pie-redes img{display:block;width:24px;height:24px;object-fit:contain;opacity:1;visibility:visible}
+.pie-pagina .pie-redes a:hover,.pie-pagina .pie-redes a:focus-visible{background:var(--lima);border-color:var(--lima);color:#101010}
+.pie-pagina .pie-redes a:hover img,.pie-pagina .pie-redes a:focus-visible img{filter:brightness(0)}
