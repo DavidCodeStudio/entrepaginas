@@ -7,8 +7,8 @@
   <meta name="description"
     content="ENTRE PÁGINAS: un club de lectura abierto para descubrir historias, compartir ideas y conectar personas.">
   <title>ENTRE PÁGINAS · Libros que conectan</title>
-  <link rel="stylesheet" href="styles.css?v=lecturas-3">
-  <script src="script.js?v=lecturas-3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=bienvenida-4">
+  <script src="script.js?v=bienvenida-4" defer></script>
 </head>
 
 <body>
@@ -116,31 +116,36 @@
     </section>
 
     <!-- CÓMO FUNCIONA · SECCIÓN ADICIONAL -->
-    <section class="seccion funcionamiento" id="como-funciona" aria-labelledby="titulo-funcionamiento">
+    <section class="seccion funcionamiento bienvenida-club" id="como-funciona" aria-labelledby="titulo-funcionamiento">
       <div class="contenedor">
-        <div class="encabezado-seccion">
-          <div>
-            <p class="etiqueta"><strong>✳ /</strong> CÓMO FUNCIONA</p>
-            <h2 id="titulo-funcionamiento">TRES PASOS.<br><span>INFINITAS HISTORIAS.</span></h2>
-          </div>
-          <p>Sin complicaciones ni lecturas obligatorias. Tú decides cómo y cuándo participar.</p>
+        <div class="bienvenida-cabecera">
+          <div><p class="etiqueta"><strong aria-hidden="true">✳ /</strong> CÓMO FUNCIONA</p>
+            <h2 id="titulo-funcionamiento">TU PRIMER CAPÍTULO<br><span>EN EL CLUB.</span></h2></div>
+          <p class="bienvenida-intro">Una historia. Tu ritmo.<br>Muchas formas de compartir.</p>
         </div>
-        <div class="pasos">
-          <article class="paso"><span class="numero-paso">01 ↗</span>
-            <div class="icono-paso" aria-hidden="true">▤</div>
-            <h3>ELIGE UNA LECTURA.</h3>
-            <p>Descubre el libro del mes y nuestras recomendaciones.</p>
-          </article>
-          <article class="paso"><span class="numero-paso">02 ↗</span>
-            <div class="icono-paso" aria-hidden="true">◷</div>
-            <h3>LEE A TU RITMO.</h3>
-            <p>En papel, en digital o en audio. Cada forma de leer cuenta.</p>
-          </article>
-          <article class="paso"><span class="numero-paso">03 ↗</span>
-            <div class="icono-paso" aria-hidden="true">✳</div>
-            <h3>COMPARTE IDEAS.</h3>
-            <p>Participa en las conversaciones y los encuentros del club.</p>
-          </article>
+        <ol class="bienvenida-pasos" aria-label="Tres pasos para empezar en el club">
+          <li class="bienvenida-paso"><span class="bienvenida-numero" aria-hidden="true">01</span>
+            <span class="bienvenida-icono"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 7C9 4 5 3 2 4v15c4-1 7 0 10 2 3-2 6-3 10-2V4c-3-1-7 0-10 3ZM12 7v14M5 7v9M19 7v9"/></svg></span>
+            <h3>ENCUENTRA<br> UNA HISTORIA.</h3>
+            <p>Explora la selección del club y elige lo que te apetece leer.</p>
+            <a class="bienvenida-enlace" href="#lecturas">Explorar lecturas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 12h17m-7-7 7 7-7 7"/></svg></a>
+          </li>
+          <li class="bienvenida-paso"><span class="bienvenida-numero" aria-hidden="true">02</span>
+            <span class="bienvenida-icono"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-6-5-6 5V3Z"/><path d="m21 6 2-1m-2 5 2 1"/></svg></span>
+            <h3>HAZLA TUYA,<br> A TU RITMO.</h3>
+            <p>En papel, digital o audio. Quédate con una idea, una pregunta o una frase.</p>
+            <p class="bienvenida-nota">Cada forma de leer cuenta.</p>
+          </li>
+          <li class="bienvenida-paso"><span class="bienvenida-numero" aria-hidden="true">03</span>
+            <span class="bienvenida-icono"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 4C7 1 2 4 2 8c0 3 2 5 5 6l-1 4 5-3c5 0 8-3 8-6 0-2-2-4-6-5Z"/><path d="M20 12c2 1 3 3 2 5l-2 2 1 3-5-2c-2 0-4-1-5-2M20 4l1-2M22 7l2-1"/></svg></span>
+            <h3>TRAE TU MIRADA.</h3>
+            <p>Descubre los encuentros y comparte lo que te hizo pensar. También puedes empezar escuchando.</p>
+            <a class="bienvenida-enlace" href="#eventos">Ver encuentros <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 12h17m-7-7 7 7-7 7"/></svg></a>
+          </li>
+        </ol>
+        <div class="bienvenida-cierre">
+          <div class="bienvenida-confianza"><p>No hace falta ser experto.</p><span>La curiosidad es un buen comienzo.</span></div>
+          <a class="boton boton-lima bienvenida-cta" href="#lecturas">ENCUENTRA TU PRIMERA LECTURA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 12h17m-7-7 7 7-7 7"/></svg></a>
         </div>
       </div>
     </section>

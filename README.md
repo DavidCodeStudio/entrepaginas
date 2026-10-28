@@ -27,3 +27,6 @@ Instagram, X y YouTube: SVG oficiales de Bootstrap Icons 1.13.1, guardados local
 Cinco lecturas identificadas, una recomendación destacada y filtros siempre visibles. Cada tarjeta abre una ficha con sinopsis, motivo de lectura, tres temas de conversación y una pregunta para el club. Ciencia ficción muestra un estado vacío hasta contar con títulos confirmados; permite volver a Todas. Sin enlaces de compra mientras el marketplace esté pendiente.
 
 Verificación de la biblioteca: 320, 390, 768 y 1440 px; filtro de ensayo (2), ficción (3), ciencia ficción (0) y restablecer (5); cinco fichas, cierre con Escape y devolución del foco; acceso a Comunidad. Comprobados también marketplace, menú móvil y formularios de demostración.
+
+## Cómo funciona
+Guía de bienvenida con tres pasos, iconos SVG, enlaces a Lecturas y Eventos, y una acción principal para explorar libros. Las tarjetas se conectan horizontalmente en escritorio y verticalmente en móvil. Tipografía Barlow Condensed 700 alojada localmente; licencia SIL OFL incluida en licenses/barlow-condensed-LICENSE.txt.
