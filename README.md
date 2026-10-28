@@ -36,3 +36,6 @@ Diseño editorial aprobado: collage original completo, tres formas de participar
 
 ## Inclusión
 Diseño aprobado con ilustración de libro y auriculares, tres compromisos y contacto independiente. El formulario se identifica como demostrativo antes de escribir: no envía ni almacena mensajes, no solicita datos personales ni de salud y borra el texto al completar la prueba. Conectar un canal real antes de habilitar el envío. La ilustración es un recurso gráfico generado a partir de la propuesta aprobada.
+
+## Invitación a Discord
+El popup del club explica el futuro envío automático de una invitación al servidor de Discord por correo. Nombre opcional, email obligatorio y newsletter independiente. El aviso previo y el resultado indican que se trata de una demostración: no se envían correos ni se guardan datos. Permite volver para corregir el email; al cerrar borra los campos. Los botones de eventos aclaran que no reservan plaza. Para habilitar envíos reales se necesitan un backend o servicio de correo, remitente verificado y una invitación válida a Discord almacenada en el servidor. No se incluyen claves ni invitaciones privadas en el frontend. No se simula un envío o un reenvío real.

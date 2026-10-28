@@ -44,19 +44,45 @@ botonesFiltro.forEach(boton => boton.addEventListener('click', () => {
   if (vacia) vacia.hidden = visibles !== 0;
 }));
 
-// 03 · Inscripción demostrativa: sin envío ni almacenamiento
+// 03 · Acceso a Discord: interfaz de prueba hasta conectar correo e invitación.
 const dialogoInscripcion = document.getElementById('dialogo-inscripcion');
+const formularioInscripcion = document.getElementById('formulario-inscripcion');
+const confirmacionDiscord = document.getElementById('discord-confirmacion');
+const mensajeInscripcion = document.querySelector('.mensaje-inscripcion');
 document.querySelectorAll('[data-abrir-inscripcion]').forEach(boton => {
-  boton.addEventListener('click', () => dialogoInscripcion?.showModal());
+  boton.addEventListener('click', () => {
+    formularioInscripcion.hidden = false;
+    confirmacionDiscord.hidden = true;
+    mensajeInscripcion.textContent = '';
+    const contexto = dialogoInscripcion.querySelector('.discord-contexto');
+    const actividad = boton.closest('.evento-datos')?.querySelector('h4')?.textContent;
+    contexto.hidden = !actividad;
+    contexto.textContent = actividad ? `Te interesa «${actividad}». Esta invitación dará acceso a la comunidad; no es una reserva de plaza para el evento.` : '';
+    dialogoInscripcion.showModal();
+  });
 });
 dialogoInscripcion?.querySelector('.cerrar-dialogo')?.addEventListener('click', () => dialogoInscripcion.close());
 dialogoInscripcion?.addEventListener('click', evento => {
   if (evento.target === dialogoInscripcion) dialogoInscripcion.close();
 });
-document.getElementById('formulario-inscripcion')?.addEventListener('submit', evento => {
+dialogoInscripcion?.addEventListener('close', () => {
+  formularioInscripcion.reset();
+  mensajeInscripcion.textContent = '';
+});
+formularioInscripcion?.addEventListener('submit', evento => {
   evento.preventDefault();
-  const mensaje = document.querySelector('.mensaje-inscripcion');
-  if (mensaje) mensaje.textContent = '¡Gracias! Esto es una demostración: no hemos registrado tus datos.';
+  if (!formularioInscripcion.reportValidity()) return;
+  formularioInscripcion.hidden = true;
+  confirmacionDiscord.hidden = false;
+  mensajeInscripcion.textContent = 'Prueba completada. Esta es una demostración: no hemos enviado ninguna invitación ni guardado tus datos.';
+  const volver = confirmacionDiscord.querySelector('[data-corregir-correo]');
+  volver.focus();
+});
+document.querySelector('[data-corregir-correo]')?.addEventListener('click', () => {
+  confirmacionDiscord.hidden = true;
+  formularioInscripcion.hidden = false;
+  mensajeInscripcion.textContent = '';
+  document.getElementById('correo-inscripcion').focus();
 });
 
 // 04 · Newsletter demostrativa: sin envío ni almacenamiento
@@ -101,19 +127,6 @@ if ('IntersectionObserver' in window) {
   }, {rootMargin: '-15% 0px -55% 0px', threshold: 0});
   document.querySelectorAll('header[id], main section[id]').forEach(s => observador.observe(s));
 }
-// Permite conservar el contexto de la actividad al abrir la inscripción.
-document.querySelectorAll('.evento-datos button').forEach(boton => {
-  boton.addEventListener('click', () => {
-    const titulo = boton.closest('.evento-datos').querySelector('h4').textContent;
-    document.querySelector('#dialogo-inscripcion > p:not(.etiqueta)').textContent = `Te interesa «${titulo}». Puedes probar el formulario; la actividad y la inscripción son demostrativas.`;
-  });
-});
-document.querySelectorAll('[data-abrir-inscripcion]:not(.evento-datos button)').forEach(boton => {
-  boton.addEventListener('click', () => {
-    document.querySelector('#dialogo-inscripcion > p:not(.etiqueta)').textContent = 'Un primer paso para leer en compañía. Prueba el formulario de inscripción: no se envían ni se guardan datos.';
-  });
-});
-
 // Acceso independiente al futuro marketplace; no utiliza el registro del club.
 const dialogoMarketplace = document.getElementById('dialogo-marketplace');
 document.querySelector('[data-abrir-marketplace]')?.addEventListener('click', () => dialogoMarketplace?.showModal());

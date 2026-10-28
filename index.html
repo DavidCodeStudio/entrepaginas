@@ -7,8 +7,8 @@
   <meta name="description"
     content="ENTRE PÁGINAS: un club de lectura abierto para descubrir historias, compartir ideas y conectar personas.">
   <title>ENTRE PÁGINAS · Libros que conectan</title>
-  <link rel="stylesheet" href="styles.css?v=inclusion-6">
-  <script src="script.js?v=inclusion-6" defer></script>
+  <link rel="stylesheet" href="styles.css?v=discord-7">
+  <script src="script.js?v=discord-7" defer></script>
 </head>
 
 <body>
@@ -464,18 +464,28 @@
     </div>
   </footer>
 
-  <!-- DIÁLOGO DEMOSTRATIVO DE INSCRIPCIÓN -->
-  <dialog id="dialogo-inscripcion" class="dialogo-inscripcion" aria-labelledby="titulo-dialogo"><button type="button"
-      class="cerrar-dialogo" aria-label="Cerrar">×</button>
-    <p class="etiqueta"><strong>✳ /</strong> ENTRE PÁGINAS</p>
-    <h2 id="titulo-dialogo">¿LEEMOS JUNTOS?</h2>
-    <p>Déjanos tu correo para simular tu inscripción al club.</p>
-    <form id="formulario-inscripcion"><label for="nombre-inscripcion">Tu nombre</label><input id="nombre-inscripcion"
-        name="nombre" required autocomplete="name"><label for="correo-inscripcion">Tu correo</label><input
-        id="correo-inscripcion" name="correo" type="email" required autocomplete="email"><button
-        class="boton boton-lima" type="submit">QUIERO UNIRME →</button>
+  <!-- ACCESO AL CLUB EN DISCORD · ENVÍO PENDIENTE DE CONFIGURAR -->
+  <dialog id="dialogo-inscripcion" class="dialogo-inscripcion dialogo-discord" aria-labelledby="titulo-dialogo" aria-describedby="discord-descripcion discord-aviso">
+    <button type="button" class="cerrar-dialogo" aria-label="Cerrar inscripción al club">×</button>
+    <p class="etiqueta"><strong>✳ /</strong> ENTRE PÁGINAS · DISCORD</p>
+    <h2 id="titulo-dialogo">TU PRÓXIMA HISTORIA SE COMPARTE.</h2>
+    <p id="discord-descripcion">Recibe en tu correo una invitación para unirte al club en Discord.</p>
+    <p class="discord-contexto" hidden></p>
+    <ol class="discord-pasos" aria-label="Cómo será el acceso al club"><li>Deja tu correo</li><li>Recibe la invitación</li><li>Únete en Discord</li></ol>
+    <p id="discord-aviso" class="discord-aviso">Estamos preparando el envío automático. Puedes probar este formulario, pero todavía no envía correos ni guarda tus datos.</p>
+    <form id="formulario-inscripcion">
+      <label for="nombre-inscripcion">Tu nombre <span class="campo-opcional">(opcional)</span></label>
+      <input id="nombre-inscripcion" name="nombre" autocomplete="given-name" maxlength="100">
+      <label for="correo-inscripcion">Tu correo electrónico</label>
+      <input id="correo-inscripcion" name="correo" type="email" required autocomplete="email" maxlength="254" aria-describedby="discord-privacidad">
+      <button class="boton boton-lima" type="submit">ENVIARME LA INVITACIÓN A DISCORD <span aria-hidden="true">→</span></button>
+      <p id="discord-privacidad" class="discord-ayuda">Necesitarás una cuenta de Discord. Cuando se active el envío, usaremos tu correo para enviarte el acceso; la newsletter se solicita por separado.</p>
+    </form>
+    <div id="discord-confirmacion" hidden>
       <p class="mensaje-inscripcion" role="status" aria-live="polite"></p>
-    </form><small>Demostración: tus datos no se envían ni se guardan.</small>
+      <p>Cuando activemos el envío, recibirás un email con el botón «Unirme al club en Discord». Si no lo encuentras, podrás revisar spam o promociones.</p>
+      <button type="button" class="boton boton-contorno" data-corregir-correo>VOLVER AL FORMULARIO <span aria-hidden="true">←</span></button>
+    </div>
   </dialog>
   <dialog id="dialogo-marketplace" class="dialogo-inscripcion" aria-labelledby="titulo-marketplace" aria-describedby="descripcion-marketplace">
     <button type="button" class="cerrar-dialogo" aria-label="Cerrar marketplace">×</button>
