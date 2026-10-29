@@ -272,3 +272,13 @@
 #dialogo-inscripcion .telegram-marca>.bi-telegram{width:24px;height:24px;flex-shrink:0;color:var(--azul);fill:currentColor}
 #dialogo-inscripcion .boton-telegram{gap:12px}
 @media(max-width:380px){#dialogo-inscripcion .telegram-marca{gap:8px}#dialogo-inscripcion .telegram-marca>span{font-size:9px;letter-spacing:1px}#dialogo-inscripcion .boton-telegram{gap:8px}.portada .boton-telegram{gap:16px}}
+
+/* Discord en Eventos: acceso independiente del grupo de Telegram. */
+#eventos .eventos-boton>.bi-discord,#dialogo-eventos-discord .bi-discord{width:24px;height:24px;flex-shrink:0;fill:currentColor}
+#dialogo-eventos-discord .eventos-discord-marca{display:flex;align-items:center;gap:12px}
+#dialogo-eventos-discord .eventos-discord-marca>.bi-discord,#eventos-discord-titulo>span{color:var(--azul)}
+#dialogo-eventos-discord .eventos-discord-enviar{gap:12px}
+#dialogo-eventos-discord .eventos-discord-resultado{background:var(--lima);padding:15px;font-size:14px;line-height:1.5;font-weight:600}
+#dialogo-eventos-discord .eventos-discord-contexto{border-left:3px solid var(--rosa);padding-left:12px}
+#dialogo-eventos-discord #eventos-discord-confirmacion>p{font-size:14px;line-height:1.5}
+@media(max-width:380px){#dialogo-eventos-discord .eventos-discord-enviar{gap:8px}#dialogo-eventos-discord .eventos-discord-marca{gap:8px;font-size:9px}}

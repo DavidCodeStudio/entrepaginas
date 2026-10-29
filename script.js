@@ -177,3 +177,35 @@ document.getElementById('formulario-inclusion')?.addEventListener('submit', even
   document.querySelector('.mensaje-inclusion').textContent = 'Prueba completada: tu mensaje no se ha enviado ni guardado.';
   evento.target.reset();
 });
+
+// Eventos online por videollamada: invitación a Discord independiente de Telegram.
+const dialogoEventosDiscord = document.getElementById('dialogo-eventos-discord');
+const formularioEventosDiscord = document.getElementById('formulario-eventos-discord');
+const confirmacionEventosDiscord = document.getElementById('eventos-discord-confirmacion');
+const resultadoEventosDiscord = document.querySelector('.eventos-discord-resultado');
+document.querySelectorAll('[data-abrir-eventos-discord]').forEach(boton => boton.addEventListener('click', () => {
+  formularioEventosDiscord.hidden = false;
+  confirmacionEventosDiscord.hidden = true;
+  resultadoEventosDiscord.textContent = '';
+  const actividad = boton.closest('.evento-datos')?.querySelector('h4')?.textContent;
+  const contexto = dialogoEventosDiscord.querySelector('.eventos-discord-contexto');
+  contexto.hidden = !actividad;
+  contexto.textContent = actividad ? `Te interesa «${actividad}». La invitación al servidor no confirma una reserva para esta actividad.` : '';
+  dialogoEventosDiscord.showModal();
+}));
+dialogoEventosDiscord?.querySelector('.cerrar-dialogo').addEventListener('click', () => dialogoEventosDiscord.close());
+dialogoEventosDiscord?.addEventListener('click', evento => {if (evento.target === dialogoEventosDiscord) dialogoEventosDiscord.close();});
+dialogoEventosDiscord?.addEventListener('close', () => {
+  formularioEventosDiscord.reset();resultadoEventosDiscord.textContent = '';
+});
+formularioEventosDiscord?.addEventListener('submit', evento => {
+  evento.preventDefault();
+  if (!formularioEventosDiscord.reportValidity()) return;
+  formularioEventosDiscord.hidden = true;confirmacionEventosDiscord.hidden = false;
+  resultadoEventosDiscord.textContent = 'Prueba completada. No hemos enviado ninguna invitación a Discord ni guardado tus datos.';
+  confirmacionEventosDiscord.querySelector('[data-corregir-eventos-discord]').focus();
+});
+document.querySelector('[data-corregir-eventos-discord]')?.addEventListener('click', () => {
+  confirmacionEventosDiscord.hidden = true;formularioEventosDiscord.hidden = false;
+  resultadoEventosDiscord.textContent = '';document.getElementById('eventos-discord-correo').focus();
+});
