@@ -39,3 +39,10 @@ Diseño aprobado con ilustración de libro y auriculares, tres compromisos y con
 
 ## Invitación a Discord
 El popup del club explica el futuro envío automático de una invitación al servidor de Discord por correo. Nombre opcional, email obligatorio y newsletter independiente. El aviso previo y el resultado indican que se trata de una demostración: no se envían correos ni se guardan datos. Permite volver para corregir el email; al cerrar borra los campos. Los botones de eventos aclaran que no reservan plaza. Para habilitar envíos reales se necesitan un backend o servicio de correo, remitente verificado y una invitación válida a Discord almacenada en el servidor. No se incluyen claves ni invitaciones privadas en el frontend. No se simula un envío o un reenvío real.
+
+## Página de la lectura mensual
+`lectura-del-mes.html` contiene el plan, accesible desde el botón «Ver el plan del mes» de la portada. `plan-mensual.js` comparte el estado de la semana y la meta entre ambas páginas. No cambia por la fecha del navegador: editar `semana` (1–4) y los textos de `etapas` cuando el club confirme el calendario. La acción principal depende de la etapa. Se publica como plan de ejemplo; confirmar también título, metas, avisos, fecha, hora, zona horaria y duración antes de anunciar un calendario real. Actualizar los textos de ejemplo y los avisos al activar el plan.
+
+La página no registra votos ni conecta invitaciones externas. Sus enlaces llevan a la biblioteca, a Comunidad y a Próximos eventos, donde se informa del estado de los accesos. Metas por partes o capítulos, avisos de spoilers y participación flexible. La secuencia pasa a vertical en móvil.
+
+Verificado: navegación desde la portada y de vuelta, estado compartido, cuatro semanas, enlaces a comunidad y eventos; anchos 320, 390, 768 y 1440 px sin desbordamientos ni errores JavaScript.

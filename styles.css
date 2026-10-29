@@ -352,3 +352,17 @@
 @media(max-width:1100px){#lecturas.biblioteca-editorial .biblioteca-cabecera{grid-template-columns:1.8fr 1fr;gap:30px}#lecturas.biblioteca-editorial h2{font-size:58px}#lecturas.biblioteca-editorial .rejilla-libros{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){#lecturas.biblioteca-editorial .biblioteca-cabecera{grid-template-columns:1fr;gap:20px}#lecturas.biblioteca-editorial h2{font-size:clamp(40px,8vw,56px)}#lecturas.biblioteca-editorial .biblioteca-intro{max-width:450px;padding:0}#lecturas.biblioteca-editorial .biblioteca-intro p{font-size:16px}#lecturas.biblioteca-editorial .biblioteca-herramientas{margin:25px 0;gap:15px}#lecturas.biblioteca-editorial .libro-titulo{font-size:24px}}
 @media(max-width:600px){#lecturas.biblioteca-editorial .rejilla-libros{grid-template-columns:1fr;gap:24px}#lecturas.biblioteca-editorial .libro-abrir{padding:18px}#lecturas.biblioteca-editorial .libro-visual{height:300px;min-height:300px}#lecturas.biblioteca-editorial .cubierta-lectura{height:235px}#lecturas.biblioteca-editorial .libro-titulo{min-height:0;font-size:28px}#lecturas.biblioteca-editorial .libro-gancho{min-height:0;font-size:16px;margin-bottom:20px}#lecturas.biblioteca-editorial .libro-explorar{font-size:17px}#lecturas.biblioteca-editorial .biblioteca-cierre{font-size:10px;line-height:1.7}}
+/* Libro del mes: resumen compacto conectado con su página de seguimiento. */
+#libro-mes.resumen-mensual .libro-distribucion{grid-template-columns:1.15fr .75fr 1fr;gap:55px;align-items:center}
+#libro-mes.resumen-mensual h2{font:700 clamp(40px,4.3vw,64px)/1.02 'Barlow Condensed',Arial,sans-serif;letter-spacing:-.025em}
+#libro-mes.resumen-mensual .resumen-mensual-intro>p:not(.etiqueta){font-size:16px;max-width:350px}
+#libro-mes.resumen-mensual .libro-escena{transform:rotate(-4deg);padding:0;background:none;box-shadow:none}
+#libro-mes.resumen-mensual .resumen-mensual-ficha{border:0;padding:0;grid-column:auto}
+#libro-mes.resumen-mensual .ficha-libro h3{font-size:34px;line-height:1.08;margin-bottom:12px}
+#libro-mes.resumen-mensual .resumen-autor{font-size:16px}
+#libro-mes.resumen-mensual .plan-estado{display:inline-block;border-radius:25px;padding:7px 12px;background:var(--azul);color:#fff;font-size:10px;letter-spacing:.8px;font-weight:bold;line-height:1.4}
+#libro-mes.resumen-mensual .resumen-meta{font-size:14px;margin:17px 0}
+#libro-mes.resumen-mensual .ficha-libro .boton{width:100%;font:700 21px/1.2 'Barlow Condensed',Arial,sans-serif;padding:16px 20px;border:1px solid var(--negro)}
+#libro-mes.resumen-mensual .resumen-nota{font-size:12px;margin:12px 0 0;color:#41413a}
+@media(max-width:1000px){#libro-mes.resumen-mensual .libro-distribucion{grid-template-columns:1fr .8fr;gap:35px}#libro-mes.resumen-mensual .resumen-mensual-ficha{grid-column:1/-1;max-width:550px}#libro-mes.resumen-mensual h2{font-size:52px}}
+@media(max-width:600px){#libro-mes.resumen-mensual .libro-distribucion{grid-template-columns:1fr;gap:30px}#libro-mes.resumen-mensual .libro-escena{max-width:230px;width:70%;margin:0 auto}#libro-mes.resumen-mensual h2{font-size:46px}#libro-mes.resumen-mensual .ficha-libro h3{font-size:30px}}
