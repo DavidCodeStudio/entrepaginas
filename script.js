@@ -209,3 +209,9 @@ document.querySelector('[data-corregir-eventos-discord]')?.addEventListener('cli
   confirmacionEventosDiscord.hidden = true;formularioEventosDiscord.hidden = false;
   resultadoEventosDiscord.textContent = '';document.getElementById('eventos-discord-correo').focus();
 });
+
+// Comunidad de WhatsApp: invitación directa pendiente de conectar.
+const dialogoWhatsApp = document.getElementById('dialogo-comunidad-whatsapp');
+document.querySelector('[data-abrir-whatsapp]')?.addEventListener('click', () => dialogoWhatsApp?.showModal());
+dialogoWhatsApp?.querySelector('.cerrar-dialogo').addEventListener('click', () => dialogoWhatsApp.close());
+dialogoWhatsApp?.addEventListener('click', evento => {if (evento.target === dialogoWhatsApp) dialogoWhatsApp.close();});
